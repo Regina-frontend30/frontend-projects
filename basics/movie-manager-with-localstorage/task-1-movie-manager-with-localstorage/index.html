@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <form id="film-form">
+      <label for="title">Название:</label><br />
+      <input type="text" id="title" name="title" required /><br />
+      <label for="genre">Жанр:</label><br />
+      <input type="text" id="genre" name="genre" required /><br />
+      <label for="releaseYear">Год:</label><br />
+      <input type="text" id="releaseYear" name="releaseYear" required /><br />
+      <input type="checkbox" id="isWatched" name="isWatched" />
+      <label for="isWatched">Успели посмотреть?</label><br />
+
+      <!-- <input type="submit" value="Submit"> -->
+      <button type="submit" id="addBtn">Добавить</button>
+      <div class="edit-block">
+        <button type="button">Обновить</button>
+        <button type="reset">Отменить редактирование</button>
+      </div>
+    </form>
+    <table id="film-table">
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Жанр</th>
+          <th>Год</th>
+          <th>Успели посмотреть?</th>
+          <th>Действие</th>
+        </tr>
+      </thead>
+      <tbody id="film-tbody">
+        <!-- Rows will be inserted here -->
+      </tbody>
+      <select id="sortSelect">
+        <option value="title">Название</option>
+        <option value="genre">Жанр</option>
+        <option value="releaseYear">Год</option>
+      </select>
+      <button id="sortBtn">Сортировать</button>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

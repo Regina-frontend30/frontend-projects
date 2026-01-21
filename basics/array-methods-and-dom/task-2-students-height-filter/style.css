@@ -1,0 +1,13 @@
+.button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.add-button {
+  background-color: #e46606;
+  color: white;
+}

@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#film-form {
+  max-width: 1000px;
+  margin: 0 auto 24px;
+  background-color: #fff;
+  padding: 24px 32px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #999;
+}
+
+#film-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#film-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#film-form input[type="checkbox"] {
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+
+#film-form input[type="submit"] {
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#film-form input[type="submit"]:hover {
+  background-color: #444;
+}
+
+.filters-wrapper {
+  max-width: 1000px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.filters {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+}
+
+.filters input,
+.filters select {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  background-color: #fff;
+}
+
+.filters input#filter-year {
+  max-width: 140px;
+}
+
+.filters select#filter-status {
+  max-width: 140px;
+}
+
+#delete-all {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+#delete-all:hover {
+  background-color: #c9302c;
+}
+
+#film-table {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+  border-collapse: collapse;
+  box-shadow: 0 0 5px #999;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#film-table th,
+#film-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+#film-table th {
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+}
+
+#film-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}

@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 0 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+button {
+  display: block;
+  margin-bottom: 20px;
+  padding: 6px 12px;
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #c3c3c3;
+}
+
+.container {
+  width: 600px;
+  max-width: 90%;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
