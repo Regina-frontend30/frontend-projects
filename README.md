@@ -1,12 +1,10 @@
-# Frontend Learning
+## My Learning Path
 
-My learning projects in frontend development.
+This repository contains my practice projects from frontend courses:
 
+- Web Markup 3.0  
+- JavaScript  
+- TypeScript & Developer Tools  
+- React.js  
 
-## Tech stack
-
-- HTML
-- CSS
-- JavaScript
-- TypeScript (soon)
-- React (soon)
+Each folder represents a set of tasks and mini-projects completed during learning.
