@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #cfd5db;
+}
+
+#app {
+  padding: 40px 60px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease,
+    background-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2f8f7f;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #267369;
+}
+
+.btn-danger {
+  background-color: #a62626;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background-color: #8b1f1f;
+}
+
+.top-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.table-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table th,
+.table td {
+  padding: 14px 18px;
+  font-size: 14px;
+}
+
+.table thead {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-form label {
+  font-size: 14px;
+}
+
+.add-form input {
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1px solid #d0d4da;
+  font-size: 14px;
+}
+
+.add-form input:focus {
+  outline: none;
+  border-color: #2f8f7f;
+}
+
+.add-form .actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-form .actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.add-form .actions .btn-primary {
+  width: 100%;
+  max-width: 520px;
+  justify-content: center;
+}
+
+.loader {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #2f8f7f;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
