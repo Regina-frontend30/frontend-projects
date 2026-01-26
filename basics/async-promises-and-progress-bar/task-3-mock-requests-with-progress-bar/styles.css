@@ -1,0 +1,25 @@
+.page {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 10px;
+}
+
+.progress-wrapper {
+  width: 500px;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 20px;
+  background: rgb(15, 60, 209);
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.progress-timer {
+  margin-top: 4px;
+}
