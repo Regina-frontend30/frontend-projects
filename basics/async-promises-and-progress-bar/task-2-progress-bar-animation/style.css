@@ -1,0 +1,13 @@
+#progress-bar {
+  height: 20px;
+  width: 500px;             
+  background-color: #3513e0;     
+  transform-origin: left;    
+  transform: scaleX(0); 
+  transition: transform 1s linear;
+}
+
+#timer {
+  font-size: 18px;
+  margin-top: 8px;
+}
