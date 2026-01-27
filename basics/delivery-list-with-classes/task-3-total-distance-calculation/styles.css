@@ -1,0 +1,162 @@
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#delivery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 960px;
+  justify-content: center;
+}
+
+.delivery-card div {
+  margin-bottom: 6px;
+}
+
+.delivery-card div:nth-child(odd) {
+  font-size: 14px;
+  color: #777;
+}
+
+.delivery-card div:nth-child(even) {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.delivery-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px 24px;
+  width: 250px;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.delivery-status-delivery {
+  border-color: #1e90ff;
+}
+
+.delivery-status-delivered {
+  border-color: #2e9b41;
+}
+
+.delivery-status-canceled {
+  border-color: #c92432;
+  opacity: 0.7;
+}
+
+.delivery-edit-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 1px solid #1e90ff;
+  background: #f5f7ff;
+  color: #1e90ff;
+  cursor: pointer;
+}
+
+.delivery-edit-btn:hover {
+  background: #1e90ff;
+  color: #fff;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 24px 20px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.modal input,
+.modal select {
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.modal input:focus,
+.modal select:focus {
+  border-color: #1e90ff;
+}
+
+.modal-save {
+  margin-top: 6px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modal-save:hover {
+  background: #1673cc;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#total-btn {
+  margin-top: 40px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1e90ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#total-btn:hover {
+  background: #1673cc;
+}
+
+#total-result {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
